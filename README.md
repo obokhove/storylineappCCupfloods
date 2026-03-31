@@ -1,5 +1,7 @@
 # Environmental Research: Climate Paper (draft)
 
+Codes and instructions underpinning the (draft) article ``Creating story lines on floods: relating climate-change uplift to (extreme) experienced and future flooding events'' by Natasha Pullan and Onno Bokhove (School of Mathematics, Leeds Institute for Fluid Dynamics, Leeds, UK). 
+
 See call: https://iopscience.iop.org/collections/ercl-250113-756
 
 In the folder "Code", you find instructions to run all codes used and reproduce nearly all figures in the manuscript. Codes are run from the directory Code on your machine with directories Code and Data side by side.
