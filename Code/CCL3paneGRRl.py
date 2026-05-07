@@ -44,18 +44,19 @@ elif nch==1:
         
 
 # Set which file to load
-selected_file = "Armley_2020"
 selected_file = "Armley_2015"
+selected_file = "Armley_2020"
 
 
 # Set the year to see climate change
 year=2080
 hw=0.8
 # Set scenario
-# "central" scenario = "central"
+# "central" nscenario = "central"
 # "higher_central"
 # "upper_end"
 scenario = "upper_end"
+#  scenario = "central"
 
 
 
@@ -190,7 +191,7 @@ def get_flow_uplift(year, scenario, selected_file):
             else:
                 hu = 0
         elif scenario == "upper_end":
-            c = -0.01 # Normal: 0.51; in S0 beavers -0.01; with mean or 0 AFM+NFM but 1% beavers: 0.50 ; with NFM+AFM, no beavers 0.42; 0.41; 0.49
+            c = 0.51 # 0.48 # Normal: 0.51; in S0 beavers -0.01 8.98Mm^3 FEV; with mean or 0 AFM+NFM but 1% beavers: 0.50 ; with NFM+AFM, no beavers 0.42; 0.41; 0.49
             error = 0.1179
             if selected_file == "Armley_2015":
                 hu = 1.268
@@ -655,8 +656,12 @@ save_figure=True
 # figure_name= f"{selected_file}_CC2080GRRp41.png" # FEV=25.88
 # figure_name= f"{selected_file}_CC2080GRRp49.png" # FEV=29.53
 # figure_name= f"{selected_file}_CC2080GRRp51ht4p9.png" # FEV=0.729.53
+# FEV = 28.61 for c=0.47 ; 93.9% ; 30.46-28.61 = 1.85 so 6.1%
+# FEV = 29.07 for c=0.48 ; 95.4% ; 30.46-29/07 = 1.39 so 4.6%
 # ht=5.11 2015 upper end
-figure_name= f"{selected_file}_CC2080GRR.png" # 
+#
+figure_name= f"{selected_file}_CC2080GRR.png" #
+figure_name= f"{selected_file}_CC2080GRR.pdf" # 
 
 data_path = 'data/'
 if save_figure:

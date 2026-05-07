@@ -169,7 +169,8 @@ print(f" Partial errors: {delQoQ} and {newerror}, Total error in uplifted Q: {to
 # Graphing
 plt.tight_layout()
 save_figure=True
-figure_name= f"CDFFAire.png"
+# figure_name= f"CDFFAire.png"
+figure_name= f"CDFFAire.pdf"
 
 data_path = 'data/'
 if save_figure:

@@ -167,8 +167,8 @@ def plot_square_lake_enhanced(name, fev, mitigations, extra=None):
         
 
         x += width
-        # if x >= size: # OB
-        #     break  # OB
+        # OLD: if x >= size: # OB
+        # OLD:    break  # OB
         xtot = x
 
     if extra and name in extra:
@@ -223,8 +223,7 @@ def plot_square_lake_enhanced(name, fev, mitigations, extra=None):
     ax.annotate('', xy=(xtot, top_yy), xytext=(0, top_yy), arrowprops=dict(arrowstyle='<->', color='black', linewidth=1.5))
     # OLD: ax.text(size / 2, 200,
     top_y = size - 0.1 * size   # dynamic spacing
-    ax.text(xtot / 2, top_y, 
-            f"Total: {total_percent:.1f}% FEV mitigated, \u00A3{total_cost:.1f}M",
+    ax.text(xtot / 2, top_y, f"Total: {total_percent:.1f}% FEV mitigated, \u00A3{total_cost:.1f}M",
             ha='center', va='bottom', fontsize=10, weight='bold')
 
     ax.set_aspect('equal')
@@ -247,7 +246,8 @@ for name, data in floods.items():
 
 # Automatically set
 save_figure=True
-figure_name= f"costeffisqlS0plus.png"
+# figure_name= f"costeffisqlS0plus.png"
+figure_name= f"costeffisqlS0plus.pdf"
 
 data_path = 'data/'
 if save_figure:

@@ -557,7 +557,8 @@ plt.text(0.4, start_y - spacing * 9, fr'$Q_{{max}} = {Emax}\,\mathrm{{m^3/s}}$',
 
 # Automatically set
 save_figure=True
-figure_name= f"{selected_file}_CC2080.png"
+#figure_name= f"{selected_file}_CC2080.png"
+figure_name= f"{selected_file}_CC2080.pdf"
 
 data_path = 'data/'
 if save_figure:

@@ -46,7 +46,7 @@ elif nch==1:
     
 # Set which file to load, e.g. selected_file = "Don_Tesco_2007"
 selected_file = "Armley_2015"
-# selected_file = "Armley_2020"
+selected_file = "Armley_2020"
 
 # Load the CSV
 Data = pd.read_csv(file_paths[selected_file])
@@ -407,7 +407,8 @@ plt.text(0.4, start_y - spacing * 9, fr'$Q_{{max}} = {Emax}\,\mathrm{{m^3/s}}$',
 
 # Automatically set
 save_figure=True
-figure_name= f"{selected_file}_3panelGRR.png"
+#figure_name= f"{selected_file}_3panelGRR.png"
+figure_name= f"{selected_file}_3panelGRR.pdf"
 
 data_path = 'data/'
 if save_figure:
