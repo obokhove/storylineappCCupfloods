@@ -367,9 +367,13 @@ ax.tick_params(axis='y',colors='black',direction='out',length=10,width=1, labels
 
 
 plt.text(-scaledht+1/100, -1,'$h_T$', size=tsize)
+# General:
 plt.text(-scaledhm+1/100, -1,'$h_m$', size=tsize)
+# 2020 plt.text(-scaledhm-10/100, -1,'$h_m$', size=tsize)
 plt.text(1, scaledqm,'$Q_m$', size=tesize)
+# General:
 plt.text(1, scaledqt,'$Q_T$', size=tesize)
+# 2020 plt.text(1, 0.95*scaledqt,'$Q_T$', size=tesize)
 plt.text((f+g/2)-0.2,-0.28,'$T_f$',size=tesize)
 
 plt.text(0.01, 1.05,'$Q$ [m$^3$/s]', size=tesize)
@@ -398,8 +402,10 @@ plt.text(0.4, start_y - spacing * 1, fr'$FEV_{{max}} \approx {Amax}\,\mathrm{{Mm
 plt.text(0.4, start_y - spacing * 2, fr'$FEV_{{min}} \approx {Amin}\,\mathrm{{Mm}}^3$', size=tesiz)
 plt.text(0.4, start_y - spacing * 3, fr'$T_f = {B}\,\mathrm{{hrs}}$', size=tesiz)
 plt.text(0.4, start_y - spacing * 4, fr'$h_T = {C}\,\mathrm{{m}}$', size=tesiz)
+# General:
 plt.text(0.4, start_y - spacing * 5, fr'$h_m = {D}\,\mathrm{{m}}$', size=tesiz)
 plt.text(0.4, start_y - spacing * 6, fr'$h_{{max}} = {H}\,\mathrm{{m}}$', size=tesiz)
+# General:
 plt.text(0.4, start_y - spacing * 7, fr'$Q_T = {E}\,\mathrm{{m^3/s}}$', size=tesiz)
 plt.text(0.4, start_y - spacing * 8, fr'$Q_m = {F}\,\mathrm{{m^3/s}}$', size=tesiz)
 plt.text(0.4, start_y - spacing * 9, fr'$Q_{{max}} = {Emax}\,\mathrm{{m^3/s}}$', size=tesiz)
