@@ -211,7 +211,9 @@ def plot_square_lake_enhanced(name, fev, mitigations,extra=None):
     ax.set_ylabel("Sidelength (m)", fontsize=10)
 
     # Title positioned just above the centre of the square
-    ax.text(size / 2, size + 0.3, f"$S_1$: FEV ≈ {size:.0f}$^2$ m$^2$ × 2m ≈ {fev:.2f}Mm$^3$",
+    # S1: ax.text(size / 2, size + 0.3, f"$S_1$: FEV ≈ {size:.0f}$^2$ m$^2$ × 2m ≈ {fev:.2f}Mm$^3$",
+    # S1'
+    ax.text(size / 2, size + 0.3, f"$S_1'$: FEV ≈ {size:.0f}$^2$ m$^2$ × 2m ≈ {fev:.2f}Mm$^3$",
             ha='center', va='bottom', fontsize=12)
     total_arrow_y = size + 0.05
     # OLD: ax.annotate('', xy=(x, 100), xytext=(0, 100),arrowprops=dict(arrowstyle='<->', color='black', linewidth=1.5))
