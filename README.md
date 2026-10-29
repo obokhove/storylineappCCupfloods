@@ -1,4 +1,4 @@
-# Story line Paper GitHub files (draft)
+# Story line paper GitHub files
 
 Codes and instructions underpinning the (draft) article ``Creating story lines on floods: relating climate-change uplift to (extreme) experienced and future flooding events'' by Natasha Pullan and Onno Bokhove (School of Mathematics, Leeds Institute for Fluid Dynamics, Leeds, UK). 
 
